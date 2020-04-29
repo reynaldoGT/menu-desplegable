@@ -1,0 +1,66 @@
+*
+	padding: 0
+	margin: 0
+	list-style: none
+	text-decoration: none
+	font-family: 'roboto'
+body
+	background: #fffffa
+header
+	width: 100%
+	nav
+		width: 90%
+		margin: 20px auto
+		max-width: 1000px
+		background: #024959
+		ul
+		 overflow: hidden
+		li
+			float: left
+
+			a
+				color : #fff
+				padding: 20px
+				display: block
+				&:hover
+					background: #037e8c
+		span
+			margin-right: 10px
+.menu_bar
+	display: none
+	// usando los media queris
+section
+	padding: 20px
+	width: 80%
+	margin: auto
+	h3
+		padding: 10px
+		font-size: 20px
+		text-transform: uppercase
+
+@media screen and (max-width:800px)
+	header nav
+		width: 80%
+		height: 100%
+		margin: 0
+		position: fixed
+		left: -100%
+		ul li
+			display: block
+			float: none
+			border-bottom: 1px solid rgba(255,255,255, .3)
+	.menu_bar
+		display: block
+		width: 100%
+		background: #ccc
+		.bt-menu
+			display: block
+			padding: 20px
+			background: #024959
+			color : #fff
+			font-weight: bold
+			font-size: 25px
+			box-sizing: border-box
+			span
+				float: right
+				font-size: 40px
